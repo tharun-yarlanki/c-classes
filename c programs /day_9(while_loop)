@@ -1,1 +1,44 @@
+1)
+//  Write a C program that asks the user to input a integer and calculates the sum of its digits. Using While loop.
 
+//  Input : 
+//  Enter a three digit number : 123
+//  Output :
+// 	Sum of the digits : 6
+#include <stdio.h>
+int main() {
+int i=0,sum=0,a;
+scanf("%d",&a);
+
+while(a!=0)
+{
+    sum=a%10;
+    i=i+sum;
+    a=a/10;
+    
+}
+printf("%d",i);
+    return 0;
+}
+/////////////////////////////////////////////////////////////////////////////////////
+2)
+// Write a C program that asks the user to input an integer and count the digits and print the count of the digits.
+
+// Input : 
+// 	Enter a number : 546
+// Output:
+// 	Count of the digits is : 3
+#include<stdio.h>
+int main()
+{
+int a,b=0;
+scanf("%d",&a);
+while(a!=0)
+{
+    
+  b++;
+  a=a/10;
+}
+printf("%d",b);
+}
+////////////////////////////////////////////////////////////////////////////////////////
