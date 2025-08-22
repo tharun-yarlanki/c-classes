@@ -42,3 +42,90 @@ while(a!=0)
 printf("%d",b);
 }
 ////////////////////////////////////////////////////////////////////////////////////////
+Write a C program that asks the user to input an integer and reverse that number and display the reverse of that given number.
+
+Input as : 
+	Enter a number : 123
+Output as : 
+	Reverse of the given number is : 321
+#include <stdio.h>
+
+int main() {
+    int num, reversed = 0, remainder;
+
+    // Asking user for input
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    // Reversing the number
+    while (num != 0) {
+        remainder = num % 10;          // Get last digit
+        reversed = reversed * 10 + remainder; // Build reversed number
+        num = num / 10;                // Remove last digit
+    }
+
+    // Display output
+    printf("Reverse of the given number is : %d\n", reversed);
+
+    return 0;
+}
+////////////////////////////////////////////////////////////////////
+// Write a C program that takes a  integer as input and prints its each  digits in separate line reverse order using a while loop.
+
+
+// case 1:
+// -------
+// input :
+// 	Enter a number : 1234
+
+// output : 
+// 	4
+// 	3
+// 	2
+// 	1
+#include <stdio.h>
+
+int main() {
+    int num, remainder;
+
+    // Input
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    // Print digits in reverse order
+    while (num!=0) {
+        remainder = num % 10;   // Extract last digit
+        printf("%d\n", remainder); // Print digit
+        num = num / 10;         // Remove last digit
+    }
+
+    return 0;
+}
+////////////////////////////////////////////////////////////////////////
+// write a C program to find the factorial of a given number. Take the input from the user.
+// Input as :
+// 	Enter a number : 5
+// Output as :
+// 	Factoria of 5 : 120
+
+#include <stdio.h>
+
+int main() {
+    int num, fact = 1, i;
+
+    // Input
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    i = 1;
+    while (i <= num) {
+        fact = fact * i;  // multiply
+        i++;
+    }
+
+    // Output
+    printf("Factorial of %d : %d\n", num, fact);
+
+    return 0;
+}
+
