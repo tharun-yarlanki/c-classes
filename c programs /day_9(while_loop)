@@ -84,6 +84,36 @@ int main() {
 // 	2
 // 	1
 #include <stdio.h>
+/////////////////////////////////////////////////////////////////////
+// Write a C program to find the Maximum digit in a given integer number. 
+// For example, if the input number is 153830, the output should be 8 since 8 is the highest digit in the number.
+
+// Sample input : 153830
+
+// Sample Output : 8 is highest digit in the number.
+#include <stdio.h>
+
+int main() {
+    int num, digit, max = 0;
+
+    // Input
+    printf("Enter a number : ");
+    scanf("%d", &num);
+
+    // Find maximum digit
+    while (num != 0) {
+        digit = num % 10;       // extract last digit
+        if (digit > max) {
+            max = digit;        // update max if larger
+        }
+        num = num / 10;         // remove last digit
+    }
+
+    // Output
+    printf("%d is highest digit in the number.\n", max);
+
+    return 0;
+}
 
 int main() {
     int num, remainder;
