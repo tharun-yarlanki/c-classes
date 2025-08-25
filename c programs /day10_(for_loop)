@@ -16,3 +16,29 @@ int main()
     }
 }
 /////////////////////////////////////////////////////////////////////////////////
+Factorial Calculation
+[Title:- Factorial Calculation] [for-loop]
+------------------------------------------
+
+Write a C program to calculate the factorial of a given positive integer.
+The program should prompt the user to enter a number, compute its factorial, and display the result.
+
+-> If the user enters a negative number, the program should display an error message: "Invalid input. Please enter a positive integer."
+-> If the input is 0, the program should print: "Factorial of 0 = 1," because by definition, 0! = 1
+#include<stdio.h>
+int main()
+{
+    int i,n,c=1;
+    scanf("%d",&n);
+    if(n<0)
+    {
+    printf("Invalid input Please enter a positive integer.");
+        return 0;
+    } 
+   for(i=n;i>=1;i--)
+   {
+    c=c*i;
+    
+   }
+   printf("Factorial of %d = %d",n,c);
+}
