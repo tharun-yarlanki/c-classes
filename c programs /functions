@@ -63,4 +63,53 @@ main start
  div of 40 and 10 is : 4
 
 === Code Execution Successful ===
--------------------------------------------------------------------------------------------------------------------
+===============================================================================================================================
+#include<stdio.h>
+
+void(int a, int b); //function declaration // c will compile from top to buttom
+void sub(int a, int b) ;
+void mult(int a, int b);
+void div(int a, int b) ;
+int main() // user defined
+{
+ int n1 = 10 ,n2 = 20;
+printf("main start"); // pre defined
+ add(n1,n2);
+add(20,30);
+add(30,40);
+add(40,50);
+sub(n1,n2);
+sub(30,10);
+sub(50,30);
+sub(20,30);
+mult(n1,n2);
+mult(10,20);
+mult(20,20);
+mult(30,20);
+div(n1,n2);
+div(20,10);
+div(30,10);
+div(40,10);
+return 0;
+}
+void add(int a, int b) // a = 10 ,b = 20 // c will compile from top to buttom // function defination
+{
+int sum = a+b;
+printf("\n sum of %d and %d is : %d",a,b,sum);
+}
+void sub(int a, int b) 
+{
+int sub = a-b;
+printf("\n sub of %d and %d is : %d",a,b,sub);
+}
+void mult(int a, int b) 
+{
+int mult = a*b;
+printf("\n mult of %d and %d is : %d",a,b,mult);
+}
+void div(int a, int b) 
+{
+int div = a/b;
+printf("\n div of %d and %d is : %d",a,b,div);
+}
+===============================================================================================================================
