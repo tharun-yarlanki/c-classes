@@ -1,1 +1,66 @@
+#include<stdio.h>
 
+void add(int a, int b) // a = 10 ,b = 20 // c will compile from top to buttom
+{
+int sum = a+b;
+printf("\n sum of %d and %d is : %d",a,b,sum);
+}
+void sub(int a, int b) 
+{
+int sub = a-b;
+printf("\n sub of %d and %d is : %d",a,b,sub);
+}
+void mult(int a, int b) 
+{
+int mult = a*b;
+printf("\n mult of %d and %d is : %d",a,b,mult);
+}
+void div(int a, int b) 
+{
+int div = a/b;
+printf("\n div of %d and %d is : %d",a,b,div);
+}
+int main() // user defined
+{
+ int n1 = 10 ,n2 = 20;
+printf("main start"); // pre defined
+ add(n1,n2);
+add(20,30);
+add(30,40);
+add(40,50);
+sub(n1,n2);
+sub(30,10);
+sub(50,30);
+sub(20,30);
+mult(n1,n2);
+mult(10,20);
+mult(20,20);
+mult(30,20);
+div(n1,n2);
+div(20,10);
+div(30,10);
+div(40,10);
+return 0;
+}
+
+output : 
+main start
+ sum of 10 and 20 is : 30
+ sum of 20 and 30 is : 50
+ sum of 30 and 40 is : 70
+ sum of 40 and 50 is : 90
+ sub of 10 and 20 is : -10
+ sub of 30 and 10 is : 20
+ sub of 50 and 30 is : 20
+ sub of 20 and 30 is : -10
+ mult of 10 and 20 is : 200
+ mult of 10 and 20 is : 200
+ mult of 20 and 20 is : 400
+ mult of 30 and 20 is : 600
+ div of 10 and 20 is : 0
+ div of 20 and 10 is : 2
+ div of 30 and 10 is : 3
+ div of 40 and 10 is : 4
+
+=== Code Execution Successful ===
+-------------------------------------------------------------------------------------------------------------------
