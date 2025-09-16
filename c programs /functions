@@ -113,6 +113,44 @@ int div = a/b;
 printf("\n div of %d and %d is : %d",a,b,div);
 }
 ===============================================================================================================================
+#include<stdio.h>
+int square(int n)
+{
+   
+    printf("square : %d", n*n);
+    
+}
+int reverse(int  n)
+{
+int rev = 0;
+int rem;
+while(n!=0)
+{
+rem = n % 10;           // 1234 % 10 = 4 last digit ,3,2,1
+rev = rev * 10 + rem;   // 0*10 + 4 = 4,3,2,1
+n /= 10;                // n=n/10 
+}
+printf("reverse : %d",rev);
+
+}
+int main()
+{
+int n;
+printf("ENTER A NUMBER : ");
+scanf("%d",&n);
+reverse(n);
+printf("\n");
+square(n);
+return 0;
+}
+
+output : 
+
+ENTER A NUMBER : 12
+reverse : 21
+square : 144
+
+=== Code Execution Successful ===
 
 #include<stdio.h>
 int reverse(int  n)
